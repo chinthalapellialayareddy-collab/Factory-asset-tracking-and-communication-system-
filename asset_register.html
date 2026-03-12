@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset Register</title>
+    <style>
+        /* Page background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container for form */
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            width: 400px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Header */
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Inputs and Select */
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Asset Register</h2>
+        <form action="asset_register.jsp" method="post">
+            <label>Asset Name</label>
+            <input type="text" name="asset_name" placeholder="Enter Asset Name" required>
+
+            <label>Asset Type</label>
+            <select name="asset_type" required>
+                <option value="">Select Asset Type</option>
+                <option>Machine</option>
+                <option>Tool</option>
+                <option>Vehicle</option>
+                <option>Material</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" name="quantity" placeholder="Enter Quantity" required>
+
+            <label>Date</label>
+            <input type="date" name="date" required>
+
+            <button type="submit">Register Asset</button>
+        </form>
+    </div>
+</body>
+</html>

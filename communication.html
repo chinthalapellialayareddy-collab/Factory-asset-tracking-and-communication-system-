@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Send Message</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#667eea,#764ba2);
+margin:0;
+padding:0;
+}
+
+.container{
+width:420px;
+margin:90px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+h2{
+text-align:center;
+color:#333;
+margin-bottom:20px;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-top:15px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin-top:6px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:20px;
+background:#667eea;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#5a67d8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Send Message</h2>
+
+<form action="communication.jsp" method="post">
+
+<label>Sender</label>
+<input type="text" name="sender" required>
+
+<label>Receiver</label>
+<input type="text" name="receiver" required>
+
+<label>Message</label>
+<textarea name="message" rows="4" required></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

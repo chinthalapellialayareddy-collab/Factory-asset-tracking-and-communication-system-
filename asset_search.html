@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asset Search</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#36d1dc,#5b86e5);
+margin:0;
+padding:0;
+}
+
+.container{
+width:400px;
+margin:120px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+h2{
+text-align:center;
+color:#333;
+margin-bottom:25px;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-bottom:8px;
+}
+
+input{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+margin-bottom:20px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#5b86e5;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#3b63c9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Search Asset</h2>
+
+<form action="asset_search.jsp" method="post">
+
+<label>Enter Asset ID</label>
+<input type="text" name="assetid" placeholder="Enter Asset ID">
+
+<button type="submit">Search</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

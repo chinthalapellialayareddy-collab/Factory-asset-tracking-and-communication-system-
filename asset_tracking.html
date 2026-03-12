@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Track Asset</title>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(135deg,#36d1dc,#5b86e5);
+margin:0;
+padding:0;
+}
+
+.container{
+width:400px;
+margin:80px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+color:#333;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-top:15px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin-top:5px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:20px;
+background:#36d1dc;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#5b86e5;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Track Asset</h2>
+
+<form action="asset_tracking.jsp" method="post">
+
+<label>Asset ID</label>
+<input type="number" name="assetid" required>
+
+<label>Status</label>
+<select name="status">
+<option>Working</option>
+<option>Under Maintenance</option>
+<option>Damaged</option>
+<option>Inactive</option>
+</select>
+
+<label>Location</label>
+<input type="text" name="location" required>
+
+<button type="submit">Update</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

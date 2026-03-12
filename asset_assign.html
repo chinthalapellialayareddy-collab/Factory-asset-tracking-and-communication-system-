@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asset Assign</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+width:420px;
+padding:30px;
+border-radius:12px;
+box-shadow:0 15px 30px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+h2{
+color:#333;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+input:focus{
+border-color:#4facfe;
+outline:none;
+box-shadow:0 0 5px rgba(79,172,254,0.6);
+}
+
+button{
+width:100%;
+padding:12px;
+background:#4facfe;
+color:white;
+font-size:16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#007bff;
+}
+
+.home{
+display:block;
+margin-top:15px;
+text-decoration:none;
+color:#4facfe;
+font-weight:bold;
+}
+
+.home:hover{
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Asset Assign</h2>
+
+<form action="asset_assign.jsp" method="post">
+
+<input type="number" name="assetid" placeholder="Asset ID" required>
+
+<input type="number" name="empid" placeholder="Employee ID" required>
+
+<label>Assign Date</label>
+<input type="date" name="assigndate" required>
+
+<label>Return Date</label>
+<input type="date" name="returndate" required>
+
+<button type="submit">Assign Asset</button>
+
+</form>
+
+<a href="index.html" class="home">Back to Home</a>
+
+</div>
+
+</body>
+</html>
